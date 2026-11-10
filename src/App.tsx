@@ -256,19 +256,19 @@ export default function App() {
                       <div className="ch-era">{ch.era}</div>
                       <h2 className="ch-title">{p.title}</h2>
                     </header>
-                    <div className="ch-scene">
-                      <p className="kicker ch-when">{ch.when}</p>
-                      {ch.scene.map((t, j) => <p key={j}>{t.split(' ').map((w, i) => <span key={i} className="w">{w} </span>)}</p>)}
-                    </div>
                     <div className="ch-body">
                       <figure className="ch-plate">
                         <img src={photoUrl(p.mid)} srcSet={`${photoUrl(p.mid)} 800w, ${photoUrl(p.file)} 1600w`} sizes="(max-width: 800px) 90vw, 40vw" alt={p.title} width={p.width} height={p.height} loading="lazy" style={{ background: p.color }} />
                         <figcaption>{st.located ? formatCoords(p.lat!, p.lng!) : st.outside ? 'Outside Paris' : 'Met along the way · exact spot still to be found'}</figcaption>
                       </figure>
                       <div className="ch-text">
-                        <p className="kicker today">Today, passing by</p>
+                        <p className="kicker today">In the picture</p>
                         {ch.text.map((t, j) => <p key={j} className="reveal">{t}</p>)}
                       </div>
+                    </div>
+                    <div className="ch-scene">
+                      <p className="kicker ch-when">{ch.when}</p>
+                      {ch.scene.map((t, j) => <p key={j}>{t.split(' ').map((w, i) => <span key={i} className="w">{w} </span>)}</p>)}
                     </div>
                     <footer className="ch-note">
                       <p className="reveal">{ch.note}</p>

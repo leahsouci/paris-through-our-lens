@@ -212,3 +212,6 @@ button { font: inherit; }
   .promenade .postcard { width: 76px; top: 14%; right: 7%; padding: 4px 4px 12px; }
   .ch-scene::before { inset: 6vh 0 12vh 0; }
 }
+
+.story .ch-scene p:not(.kicker) { font-size: clamp(20px, 1.7vw, 27px); line-height: 1.45; }
+.ch-scene { padding-top: 14vh; padding-bottom: 20vh; }
