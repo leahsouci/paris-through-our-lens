@@ -52,7 +52,7 @@ const buildings3d: LayerSpecification = {
   'source-layer': 'building',
   minzoom: 13,
   paint: {
-    'fill-extrusion-color': ['interpolate', ['linear'], ['coalesce', ['get', 'render_height'], 10], 0, '#ede4d0', 60, '#f3ebdb'],
+    'fill-extrusion-color': ['interpolate', ['linear'], ['coalesce', ['get', 'render_height'], 10], 0, '#d6c8ab', 60, '#f1e8d4'],
     'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 13, 0, 15, ['coalesce', ['get', 'render_height'], 10]],
     'fill-extrusion-base': ['coalesce', ['get', 'render_min_height'], 0],
     'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 13, 0, 13.6, 0.95],
@@ -79,7 +79,7 @@ export async function buildStyle(): Promise<StyleSpecification> {
   }
   style.layers = layers;
 
-  style.light = { anchor: 'viewport', color: '#f3ebdb', intensity: 0.32, position: [1.3, 210, 35] };
+  style.light = { anchor: 'viewport', color: '#fff3dc', intensity: 0.55, position: [1.5, 200, 40] };
   style.sky = {
     'sky-color': '#f3ebdb',
     'horizon-color': '#e8dcc4',

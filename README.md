@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Paris, à pied
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Une promenade continue, en une seule page, à travers 22 photos prises dans Paris (projet de classe).
+Chaque photo est un chapitre : on marche jusqu'au lieu sur un plan de Paris à l'encre, on remonte le temps
+avec une scène écrite à la première personne sur une œuvre d'époque, puis on retrouve la photo d'aujourd'hui.
 
-Currently, two official plugins are available:
+Stack : React + TypeScript + Vite, MapLibre GL (tuiles OpenFreeMap), GSAP ScrollTrigger, Lenis. Site 100 % statique.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Lancer en local
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm run build && npm run preview   # version de production, http://localhost:4173
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Données
+
+| Fichier | Rôle |
+| --- | --- |
+| `photos-raw/` | Photos originales (JPEG/HEIC). |
+| `src/data/locations.json` | Titre, coordonnées et ordre de marche (`step`) de chaque photo. |
+| `src/data/chapters.json` | Ordre de la promenade, textes (scène d'époque `scene`, texte d'aujourd'hui `text`, note historique), œuvre de fond. |
+| `src/data/walk.json` | Trajets à pied entre les étapes (généré). |
+| `public/art/` | Œuvres d'époque en WebP (générées depuis Wikimedia Commons, domaine public / CC0 / licences libres). |
+
+## Scripts
+
+```bash
+npm run import-photos   # photos-raw -> WebP optimisés + src/data/photos.json (lit le GPS EXIF s'il existe)
+npm run walk-route      # recalcule les trajets à pied (OpenStreetMap) et les noms de rues
+npm run fetch-art       # télécharge les œuvres de fond listées dans chapters.json + crédits
+```
+
+## Localisation des photos
+
+Les photos envoyées par WhatsApp ont perdu leurs données GPS. Six lieux ont été retrouvés à partir de ce que
+montrent les images ; les autres sont marqués « lieu encore à retrouver ». Pour en placer une : ajouter `lat`/`lng`
+(et éventuellement `step`) dans `src/data/locations.json`, puis relancer `npm run import-photos` et `npm run walk-route`.
+Envoyer les originaux (AirDrop, Drive, mail en taille réelle) permet de lire le GPS automatiquement.
+
+## Hébergement
+
+`.github/workflows/deploy.yml` construit le site et le publie sur GitHub Pages à chaque push sur `main`.

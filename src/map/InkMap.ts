@@ -68,7 +68,7 @@ export class InkMap {
     this.dest?.getElement().classList.remove('is-on');
     const el = this.map.getContainer();
     const cam = this.map.cameraForBounds(PARIS_BOUNDS, { padding: { top: 60, bottom: 60, left: Math.min(el.clientWidth * 0.42, 560), right: 40 } });
-    this.map.easeTo({ center: cam?.center, zoom: cam?.zoom ?? 11.5, pitch: 0, bearing: 0, duration: 1600 });
+    this.map.easeTo({ padding: { left: 0, right: 0, top: 0, bottom: 0 }, center: cam?.center, zoom: cam?.zoom ?? 11.5, pitch: 0, bearing: 0, duration: 1600 });
     this.bearing = 0;
   }
 
@@ -103,6 +103,8 @@ export class InkMap {
       this.dest.getElement().classList.toggle('is-on', arrive > 0.15);
       this.dest.getElement().style.setProperty('--arrive', String(ease));
     }
-    this.map.jumpTo({ center: here, zoom: 15.6 + ease * 1.5, pitch: 60 + ease * 10, bearing: this.bearing });
+    const w = this.map.getContainer().clientWidth;
+    const padding = w > 800 ? { left: Math.min(w * 0.36, 520), right: 0, top: 0, bottom: 0 } : { left: 0, right: 0, top: 0, bottom: 260 };
+    this.map.jumpTo({ center: here, zoom: 15.6 + ease * 1.5, pitch: 60 + ease * 10, bearing: this.bearing, padding });
   }
 }
