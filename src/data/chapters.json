@@ -1,0 +1,667 @@
+{
+  "order": [
+    "gospel-dream",
+    "feu-vert",
+    "forza-napoli",
+    "abribus-burger-king",
+    "big-black-cook",
+    "dessins-faits-main",
+    "deblock-metro",
+    "graffitis-zero",
+    "louvre-galerie-apollon",
+    "autocollant-revolution",
+    "vive-la-commune",
+    "affiches-pcr",
+    "systeme-violent",
+    "stendhal-rodin",
+    "le-diable-noir",
+    "le-parisien",
+    "monument-aux-morts-15e",
+    "parc-de-l-etrange",
+    "2cv-007",
+    "rue-du-palais",
+    "une-solution-revolution",
+    "nike-la-police"
+  ],
+  "legs": {
+    "gospel-dream>big-black-cook": "Je prends la rue de Caumartin, puis la rue Montmartre. Les vitrines des grands magasins, les livreurs, les klaxons. Plus j'avance vers l'est, plus les rues se resserrent, plus elles sentent la friture et le vieux bois.",
+    "big-black-cook>louvre-galerie-apollon": "Rue Étienne-Marcel, rue Jean-Jacques-Rousseau. Les pavés sont plus vieux, les façades penchent un peu. Au bout, la masse claire du Louvre, couchée comme un animal endormi.",
+    "louvre-galerie-apollon>stendhal-rodin": "Je traverse la Seine par le pont des Arts. Le vent, l'eau verte, les bouquinistes qui ouvrent leurs boîtes. Puis Saint-Germain, et les petites rues qui montent vers le jardin.",
+    "stendhal-rodin>monument-aux-morts-15e": "Rue de Fleurus, puis vers l'ouest. Montparnasse, ses cafés, ses ateliers. Les rues s'élargissent. La ville devient quotidienne, et c'est là qu'elle est la plus vraie.",
+    "monument-aux-morts-15e>2cv-007": "Je redescends vers la Seine. Le ciel s'ouvre, les immeubles s'écartent. Là-bas, au bord de l'eau, il y avait l'usine. J'y vais pour finir."
+  },
+  "chapters": {
+    "2cv-007": {
+      "era": "1929",
+      "tone": "past",
+      "text": [
+        "Elle est jaune et elle est petite. Quelqu'un a peint 007 sur la portière et les impacts de balles sont faux, mais personne ne rit. Les gens tournent autour comme autour d'un vieux cheval.",
+        "Ici, il y avait l'usine. Le quai de Javel, les cheminées, le bruit des presses du matin au soir. Les ouvriers entraient par milliers et l'acier ressortait en voitures.",
+        "Aujourd'hui il y a de l'herbe et des haies taillées. On marche là où l'on travaillait. La 2CV ne le sait pas. Elle attend, un peu penchée, comme une voiture qui se souvient."
+      ],
+      "note": "En 1929, les usines Citroën du quai de Javel emploient des milliers d'ouvriers. Elles ferment en 1975 ; le parc André-Citroën ouvre en 1992 à leur place.",
+      "art": {
+        "commons": "Usines Citroën, quai de Javel - btv1b532138417.jpg",
+        "caption": "Agence Rol, Usines Citroën, quai de Javel, 1929",
+        "image": "2cv-007-1600.webp",
+        "mid": "2cv-007-900.webp",
+        "width": 1920,
+        "height": 1385,
+        "color": "rgb(40, 40, 40)",
+        "credit": "Agence Rol. Agence photographique (commanditaire)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Usines_Citro%C3%ABn,_quai_de_Javel_-_btv1b532138417.jpg"
+      },
+      "when": "Quai de Javel · 1929, la sortie de l'usine",
+      "scene": [
+        "La sirène hurle et les grilles s'ouvrent. Nous sortons par milliers, en bleu de travail, les mains noires, le dos raide. Le quai sent l'huile, le fer chaud, la Seine.",
+        "Derrière nous, les presses continuent. Le soir, le nom de Monsieur Citroën s'allume en lettres de feu sur la tour Eiffel. On le voit d'ici, au-dessus des toits.",
+        "Je rentre à pied le long de l'eau. Un jour, j'aurai une voiture, moi aussi. Une petite. Pas chère. Pour aller voir la mer."
+      ]
+    },
+    "monument-aux-morts-15e": {
+      "era": "1919",
+      "tone": "past",
+      "text": [
+        "La pierre est blanche et les visages sont graves. Une femme tient un enfant. Un soldat regarde au loin, vers quelque chose qu'on ne voit pas.",
+        "Il fait beau. Les feuilles sont encore vertes au-dessus des grilles. Un homme passe avec son pain et ne lève pas la tête. Les noms sont là depuis cent ans, ils ont l'habitude.",
+        "En juillet 1919, Paris a défilé sous l'Arc de Triomphe. Puis les villes et les quartiers ont gravé leurs morts dans la pierre, pour que le chiffre garde des noms."
+      ],
+      "note": "Le 14 juillet 1919, le défilé de la Victoire traverse Paris derrière les maréchaux Joffre et Foch. Partout en France, on élève ensuite des monuments aux morts.",
+      "art": {
+        "commons": "Maréchal Ferdinand Foch saluant du bâton, à cheval, 14 juillet 1919.jpg",
+        "caption": "Le maréchal Foch au défilé de la Victoire, 14 juillet 1919",
+        "image": "monument-aux-morts-15e-1600.webp",
+        "mid": "monument-aux-morts-15e-900.webp",
+        "width": 1920,
+        "height": 1393,
+        "color": "rgb(8, 8, 8)",
+        "credit": "Agence de presse Meurisse",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Mar%C3%A9chal_Ferdinand_Foch_saluant_du_b%C3%A2ton,_%C3%A0_cheval,_14_juillet_1919.jpg"
+      },
+      "when": "Paris, 14 juillet 1919 · les Champs-Élysées",
+      "scene": [
+        "On est debout depuis la nuit pour avoir une place. Des gens sont montés dans les arbres, sur les réverbères, sur le toit des kiosques.",
+        "D'abord les mutilés. Ils ouvrent le défilé : ceux qui n'ont plus de jambes, poussés dans des fauteuils, ceux qui n'ont plus de visage. Personne n'applaudit. Puis les maréchaux à cheval, et là, la foule rugit.",
+        "Ma voisine serre une photo contre sa poitrine. Elle ne crie pas. Elle cherche dans les rangs un visage qui ne viendra pas. Le soir, on danse. Elle, je ne sais pas."
+      ]
+    },
+    "stendhal-rodin": {
+      "era": "1830",
+      "tone": "past",
+      "text": [
+        "Le médaillon est vert de bronze et la pierre a coulé dessous, comme une larme qui aurait pris son temps. C'est Stendhal. Il a l'air d'un homme qui a bien dîné et qui n'en dira rien.",
+        "Les feuilles tombent sur la pelouse. Les étudiants passent sans regarder. Lui aurait regardé. Il regardait tout : les femmes, les uniformes, l'ambition sur les visages.",
+        "En 1830, il publiait Le Rouge et le Noir. Paris était jeune, pauvre et sûr de lui. Le jardin était déjà là. Il l'est encore."
+      ],
+      "note": "Henri Beyle, dit Stendhal (1783-1842), portraituré en 1840. Le Rouge et le Noir paraît en 1830, l'année des Trois Glorieuses.",
+      "art": {
+        "commons": "Portrait de Stendhal en 1840, 88.23.jpg",
+        "caption": "Portrait de Stendhal en 1840",
+        "image": "stendhal-rodin-1600.webp",
+        "mid": "stendhal-rodin-900.webp",
+        "width": 1920,
+        "height": 2663,
+        "color": "rgb(232, 232, 216)",
+        "credit": "Berengier, Henri (Marseille, 15–02–1881 - 1943), graveur",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_Stendhal_en_1840,_88.23.jpg"
+      },
+      "when": "Jardin du Luxembourg · printemps 1830",
+      "scene": [
+        "Je marche dans les allées, mon manuscrit sous le bras. Le gravier crisse. Des étudiants en redingote se disputent à propos d'Hernani comme s'il s'agissait d'une guerre.",
+        "Je m'assieds sur un banc. Une jeune femme passe avec sa mère ; elle me regarde une seconde, pas plus. Je note la seconde. Tout est là : un regard, un calcul, une ambition qui se tait.",
+        "Le héros de mon livre s'appellera Julien. Il voudra tout. Il sera trop pauvre pour l'avouer. Je souris. Paris est plein de Julien."
+      ]
+    },
+    "le-diable-noir": {
+      "era": "1794",
+      "tone": "past",
+      "place": "Une vitrine de librairie",
+      "text": [
+        "Dans la vitrine, un homme noir en uniforme de général nous regarde. Il a le sabre au côté et le menton haut. Le livre s'appelle Le Diable noir.",
+        "C'est Thomas-Alexandre Dumas, le père de l'écrivain. Fils d'une esclave de Saint-Domingue, devenu général en chef des armées de la République. Les Autrichiens, dit-on, l'appelaient le diable noir.",
+        "On l'avait presque oublié. Puis un livre, une vitrine, un passant qui s'arrête. C'est comme ça que les morts reviennent : par la rue."
+      ],
+      "note": "Général en chef dès 1793, Thomas-Alexandre Dumas (1762-1806) est le premier général d'origine afro-antillaise de l'armée française.",
+      "art": {
+        "commons": "Thomas-Alexandre Dumas.jpg",
+        "caption": "Le général Thomas-Alexandre Dumas",
+        "image": "le-diable-noir-1600.webp",
+        "mid": "le-diable-noir-900.webp",
+        "width": 1738,
+        "height": 2098,
+        "color": "rgb(232, 200, 168)",
+        "credit": "François Bonneville",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Thomas-Alexandre_Dumas.jpg"
+      },
+      "when": "Col du Mont-Cenis · mai 1794",
+      "scene": [
+        "Il neige sur le col et les hommes ont faim. Le général marche devant, à pied, avec nous. Il est plus grand que tous ; sa voix porte jusqu'aux rochers.",
+        "On raconte qu'il a soulevé son cheval en s'agrippant à une poutre. On raconte que les Autrichiens l'appellent le diable noir. Moi, je l'ai vu partager son manteau.",
+        "À l'aube, on prend la redoute. Il entre le premier. Quand il se retourne vers nous, le soleil se lève derrière lui et je comprends pourquoi on le suit."
+      ]
+    },
+    "le-parisien": {
+      "era": "1900",
+      "tone": "past",
+      "place": "Un journal du matin",
+      "text": [
+        "Le journal est plié dans une main. En première page, un moustique énorme et le mot ennemi. Plus bas, la canicule, les records de chaleur.",
+        "Paris a toujours lu ses peurs le matin. Hier c'étaient les apaches, les crimes des faubourgs en couleurs criardes. Aujourd'hui un insecte et la chaleur qui monte.",
+        "La main tient le journal comme on tient un ticket. On le lira dans le métro. Puis on le laissera sur un siège pour quelqu'un d'autre."
+      ],
+      "note": "Vers 1900, les suppléments illustrés du Petit Journal mettent en couleurs les faits divers et la peur des « apaches ».",
+      "art": {
+        "commons": "Le Petit Journal - Apache.jpg",
+        "caption": "Le Petit Journal, supplément illustré, « L'Apache »",
+        "image": "le-parisien-1600.webp",
+        "mid": "le-parisien-900.webp",
+        "width": 1500,
+        "height": 2104,
+        "color": "rgb(216, 200, 168)",
+        "credit": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Le_Petit_Journal_-_Apache.jpg"
+      },
+      "when": "Paris, un matin de 1907 · au kiosque",
+      "scene": [
+        "Le vendeur crie le titre avant qu'on le lise : encore un crime d'apaches ! Sur la couverture en couleurs, un homme en casquette brandit un couteau, une femme hurle.",
+        "J'achète mon sou de peur. Je lis en marchant. On dit qu'ils ont des tatouages, des surnoms, qu'ils font la loi dans les faubourgs. Ce soir, je ne passerai pas par les fortifs.",
+        "Au bureau, tout le monde en parle. Personne n'en a jamais vu. Ça ne fait rien. La peur se vend bien, en rouge et en bleu, chaque semaine."
+      ]
+    },
+    "louvre-galerie-apollon": {
+      "era": "1796",
+      "tone": "past",
+      "text": [
+        "La pierre dit : Galerie d'Apollon. Les lettres sont dorées et un peu usées sur les bords. Au-dessus, le plafond s'ouvre sur des dieux et des nuages.",
+        "On entre avec la foule. Il fait chaud. Les gardiens regardent les mains, pas les tableaux. Un enfant demande où est le soleil, et on lui montre le plafond.",
+        "Hubert Robert peignait déjà la Grande Galerie comme une rue couverte, pleine de lumière et de gens. Le musée était neuf. Il était à tout le monde. C'est encore vrai, à condition de faire la queue."
+      ],
+      "note": "Hubert Robert, l'un des conservateurs du Muséum, imagine vers 1796 la Grande Galerie éclairée par le haut. Le Louvre est ouvert au public depuis 1793.",
+      "art": {
+        "commons": "Hubert Robert - The Grande Galerie - WGA19594.jpg",
+        "caption": "Hubert Robert, La Grande Galerie du Louvre, vers 1795",
+        "image": "louvre-galerie-apollon-1600.webp",
+        "mid": "louvre-galerie-apollon-900.webp",
+        "width": 1276,
+        "height": 1000,
+        "color": "rgb(72, 56, 40)",
+        "credit": "Hubert Robert",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hubert_Robert_-_The_Grande_Galerie_-_WGA19594.jpg"
+      },
+      "when": "Paris, 10 août 1793 · le Muséum ouvre ses portes",
+      "scene": [
+        "Hier encore, c'était le palais des rois. Aujourd'hui on entre sans payer, en sabots si l'on veut. Le gardien ne demande rien.",
+        "La Grande Galerie n'en finit pas. Les tableaux montent jusqu'au plafond, serrés comme des fenêtres sur une façade. Des enfants courent. Une citoyenne à cocarde s'arrête devant une Vierge et se signe, puis regarde autour d'elle, gênée.",
+        "Tout cela était à eux. C'est à nous. Je marche lentement pour que ça dure."
+      ]
+    },
+    "affiches-pcr": {
+      "era": "1936",
+      "tone": "past",
+      "place": "Un mur d'affiches",
+      "text": [
+        "Quatre fois la même question sur le mur : Tu es communiste ? Rejoins-nous. Le papier est neuf, la colle a coulé. Quelqu'un a déjà commencé à les arracher.",
+        "Les murs de Paris ont toujours parlé fort. On y colle, on y arrache, on y recolle. Les affiches durent ce que dure la nuit.",
+        "En 1936, ils étaient des centaines de milliers à défiler, poing levé, jusqu'au mur des Fédérés. Les drapeaux étaient rouges. L'été fut long. On se souvient surtout des congés payés."
+      ],
+      "note": "Mai 1936 : le cortège du Front populaire monte au mur des Fédérés, au Père-Lachaise, où furent fusillés des communards en 1871.",
+      "art": {
+        "commons": "Manifestation du Front populaire au mur des Fédérés - btv1b90282283.jpg",
+        "caption": "Manifestation du Front populaire au mur des Fédérés, 1936",
+        "image": "affiches-pcr-1600.webp",
+        "mid": "affiches-pcr-900.webp",
+        "width": 1920,
+        "height": 1448,
+        "color": "rgb(8, 8, 8)",
+        "credit": "Agence de presse Meurisse. Agence photographique (commanditaire)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Manifestation_du_Front_populaire_au_mur_des_F%C3%A9d%C3%A9r%C3%A9s_-_btv1b90282283.jpg"
+      },
+      "when": "Paris, 24 mai 1936 · en montant vers le Père-Lachaise",
+      "scene": [
+        "Nous sommes des centaines de milliers et, au début, on avance presque en silence. Puis quelqu'un entonne L'Internationale et tout le boulevard la reprend.",
+        "Mon père a mis sa casquette du dimanche. Il me tient la main et lève l'autre poing. Les drapeaux rouges claquent au-dessus des têtes. Au mur des Fédérés, des vieux pleurent : les leurs sont morts ici, en 1871.",
+        "Le soir, on dit que Blum va gouverner. On dit qu'il y aura des vacances payées. Mon père rit. Il n'a jamais vu la mer."
+      ]
+    },
+    "autocollant-revolution": {
+      "era": "1830",
+      "tone": "past",
+      "place": "Une porte verte",
+      "text": [
+        "Un autocollant rouge et blanc sur une porte verte. Tu es communiste ? Quelqu'un a barré et écrit Rebelle à la main. Révolution, dit le bas, en capitales.",
+        "La porte ne répond pas. Elle en a vu d'autres. Le mot est vieux à Paris, on l'a usé dans toutes les rues.",
+        "En juillet 1830, la ville s'est couverte de barricades en trois jours. Delacroix a peint une femme pieds nus, un drapeau, des morts sous ses pas. Le tableau est au Louvre. Le mot est sur la porte."
+      ],
+      "note": "Eugène Delacroix, La Liberté guidant le peuple, 1830 : les Trois Glorieuses, 27, 28 et 29 juillet.",
+      "art": {
+        "commons": "Eugène Delacroix - La liberté guidant le peuple.jpg",
+        "caption": "Eugène Delacroix, La Liberté guidant le peuple, 1830",
+        "image": "autocollant-revolution-1600.webp",
+        "mid": "autocollant-revolution-900.webp",
+        "width": 1920,
+        "height": 1520,
+        "color": "rgb(8, 8, 8)",
+        "credit": "Eugène Delacroix",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
+      },
+      "when": "Paris, 28 juillet 1830 · près de l'Hôtel de Ville",
+      "scene": [
+        "Le tocsin sonne depuis le matin. On a arraché les pavés de la rue ; ils sont empilés à hauteur d'homme avec une charrette renversée et deux portes.",
+        "Je passe les pavés de main en main. Ils sont lourds et froids. Un gamin grimpe au sommet avec un pistolet plus grand que son bras. Quelqu'un a accroché le drapeau tricolore, celui qu'on n'avait plus le droit de montrer.",
+        "La fusillade éclate vers la Grève. La poudre pique les yeux. Une femme crie qu'il faut tenir. On tient. Quelques jours plus tard, le roi s'en va."
+      ]
+    },
+    "vive-la-commune": {
+      "era": "1871",
+      "tone": "past",
+      "place": "Un mur peint",
+      "text": [
+        "Sur le grand mur aveugle, un dessin à la craie rouge, des silhouettes à peine tracées. En bas, quelqu'un a écrit Vive la Commune. Le ciel est très bleu au-dessus.",
+        "On dessine sur les murs ce qu'on n'a pas fini de dire. Cent cinquante ans, ce n'est rien pour une ville.",
+        "Au printemps 1871, Paris s'est gouverné seul pendant soixante-douze jours. Il y avait des barricades rue de Castiglione, place Vendôme, partout. Puis la Semaine sanglante, en mai. Les murs se souviennent mieux que les livres."
+      ],
+      "note": "Mars–mai 1871 : la Commune de Paris. Les photographes fixent les barricades ; certaines images serviront ensuite à identifier les insurgés.",
+      "art": {
+        "commons": "La Commune 1871. Barricade rue de Castiglione, 1er arrondissement, Paris. PH20145.jpg",
+        "caption": "Barricade rue de Castiglione, Commune de Paris, 1871",
+        "image": "vive-la-commune-1600.webp",
+        "mid": "vive-la-commune-900.webp",
+        "width": 1920,
+        "height": 1444,
+        "color": "rgb(216, 200, 168)",
+        "credit": "Attribué à Braquehais, Auguste Bruno (Dieppe, 18–01–1823 - La Celle-Saint-Cloud, 1875), photographe",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:La_Commune_1871._Barricade_rue_de_Castiglione,_1er_arrondissement,_Paris._PH20145.jpg"
+      },
+      "when": "Paris, 24 mai 1871 · rue de Castiglione",
+      "scene": [
+        "Il y a de la fumée partout. Les Tuileries brûlent derrière nous ; on sent le bois et le papier. Les cendres tombent comme une neige grise.",
+        "Je suis derrière la barricade, entre les sacs de terre et les pavés. Un garde national a un bandage sale autour de la tête. Il partage son pain avec moi sans rien dire. On entend les Versaillais avancer, rue par rue.",
+        "Quelqu'un a écrit à la craie sur le mur : Vive la Commune. On sait comment ça va finir. On reste quand même. C'est la seule chose qui nous appartienne encore."
+      ]
+    },
+    "systeme-violent": {
+      "era": "1834",
+      "tone": "past",
+      "place": "Un mur tagué",
+      "text": [
+        "Une feuille blanche collée sur un mur noir de tags : C'est votre système qui est violent, pas les lycéen·nes ! En dessous, au pochoir : NO WAR.",
+        "L'écriture est soignée. Celui qui l'a collée a pris le temps. Les lycées ferment le soir, les murs non.",
+        "En avril 1834, rue Transnonain, la troupe est entrée dans un immeuble et a tué ses habitants. Daumier a dessiné un homme en chemise de nuit, mort au pied de son lit. Ce dessin a fait plus que bien des discours."
+      ],
+      "note": "Honoré Daumier, Rue Transnonain, le 15 avril 1834, lithographie publiée pour L'Association mensuelle.",
+      "art": {
+        "commons": "Honoré Daumier, Rue Transnonain, le 15 avril 1834, 1834, NGA 6133.jpg",
+        "caption": "Honoré Daumier, Rue Transnonain, le 15 avril 1834",
+        "image": "systeme-violent-1600.webp",
+        "mid": "systeme-violent-900.webp",
+        "width": 1920,
+        "height": 1357,
+        "color": "rgb(232, 216, 200)",
+        "credit": "Honoré Daumier",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier,_Rue_Transnonain,_le_15_avril_1834,_1834,_NGA_6133.jpg"
+      },
+      "when": "Paris, avril 1834 · rue Transnonain, avant l'aube",
+      "scene": [
+        "Il y a eu des coups de feu toute la soirée. On a fermé les volets et poussé la commode contre la porte. L'enfant dort enfin.",
+        "Vers l'aube, des pas lourds dans l'escalier. Des crosses contre les portes. Quelqu'un aurait tiré depuis la maison, dit-on. Je ne sais pas qui. Je sais seulement le bruit du bois qui cède, en bas, au premier.",
+        "Je ne raconte pas la suite. Daumier l'a dessinée : un homme en chemise, au pied de son lit. Il suffit de la regarder une fois. On ne l'oublie plus."
+      ]
+    },
+    "graffitis-zero": {
+      "era": "1910",
+      "tone": "future",
+      "place": "Un mur de slogans",
+      "text": [
+        "Du bleu, du noir, des lettres qui se chevauchent. ZERO, en grand. Puis Free Gaza, Free Palestine, Mélenchon, Nik la police. Le mur est une foule qui parle en même temps.",
+        "Personne n'écoute vraiment. Tout le monde écrit. C'est comme ça qu'une ville pense à voix haute.",
+        "En 1910, les futuristes peignaient la foule comme une machine : des corps qui se cognent, de la lumière électrique. Ils croyaient que l'avenir serait bruyant. Ils avaient raison."
+      ],
+      "note": "Umberto Boccioni, Rissa in galleria (Bagarre dans la galerie), 1910. Les futuristes veulent peindre la vitesse, la foule, la ville moderne.",
+      "art": {
+        "commons": "Umberto boccioni, rissa in galleria, 1910, 01.jpg",
+        "caption": "Umberto Boccioni, Rissa in galleria, 1910",
+        "image": "graffitis-zero-1600.webp",
+        "mid": "graffitis-zero-900.webp",
+        "width": 1920,
+        "height": 2214,
+        "color": "rgb(40, 24, 24)",
+        "credit": "Francesco Bini",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Umberto_boccioni,_rissa_in_galleria,_1910,_01.jpg"
+      },
+      "when": "Paris, février 1912 · galerie Bernheim-Jeune",
+      "scene": [
+        "La galerie est pleine et tout le monde parle en même temps. Les toiles crient plus fort encore : des lignes qui partent comme des coups de couteau, des couleurs qui se battent.",
+        "Devant un tableau, une foule peinte se rue vers la porte illuminée d'un café. Deux femmes s'empoignent. Je recule d'un pas, comme si on allait me bousculer.",
+        "Derrière moi, un critique ricane : de la peinture de voyou. Un jeune homme lui répond : c'est la ville, monsieur, la ville telle qu'elle est. Dehors, les tramways passent. Il a raison."
+      ]
+    },
+    "big-black-cook": {
+      "era": "1895",
+      "tone": "past",
+      "text": [
+        "Une enseigne noire, des lettres blanches et une signature rose : Big Black Cook. Rue Tiquetonne. Le soir tombe, la lumière sort des vitres.",
+        "La rue est étroite et vieille. Elle sent la friture et la pierre. On y mange debout, on y rit fort, on repart.",
+        "À deux pas, il y avait les Halles. Lhermitte a peint les marchandes, les choux, les paniers, le ventre de Paris qui ne dormait jamais. Le ventre a déménagé. La faim est restée dans le quartier."
+      ],
+      "note": "Léon Lhermitte, Les Halles, vers 1895, Petit Palais. Le marché quitte le centre de Paris pour Rungis en 1969.",
+      "art": {
+        "commons": "Léon Augustin Lhermitte - Les Halles - musée des Beaux-Arts de la ville de Paris.jpg",
+        "caption": "Léon Lhermitte, Les Halles, vers 1895",
+        "image": "big-black-cook-1600.webp",
+        "mid": "big-black-cook-900.webp",
+        "width": 1920,
+        "height": 1244,
+        "color": "rgb(56, 40, 24)",
+        "credit": "Léon Augustin Lhermitte",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:L%C3%A9on_Augustin_Lhermitte_-_Les_Halles_-_mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg"
+      },
+      "when": "Les Halles, quatre heures du matin · 1895",
+      "scene": [
+        "Les charrettes sont arrivées de la campagne pendant la nuit. Ça sent le chou, la terre mouillée, le poisson, le café brûlé des comptoirs ouverts jusqu'au jour.",
+        "Je porte un panier de poireaux sur l'épaule et je glisse sur des feuilles écrasées. Une marchande en tablier crie un prix. Une autre répond plus fort. Les pavillons de fer et de verre sont pleins de lampes, comme des églises.",
+        "Au coin de la rue, un fort des Halles boit un vin blanc d'un trait. Il a déjà fait une journée entière. Le jour n'est pas levé."
+      ]
+    },
+    "forza-napoli": {
+      "era": "1880",
+      "tone": "past",
+      "place": "Une trattoria",
+      "text": [
+        "Une porte ouverte sur une salle chaude, des lampes jaunes, des gens assis serrés. Une femme attend dehors en pantalon blanc. Un scooter dort devant.",
+        "On entend l'italien, la vaisselle, une radio. Paris mange chez les autres depuis toujours, et finit par appeler ça chez soi.",
+        "Vers 1880, Jean Béraud peignait le boulevard des Capucines le soir, devant le Café Napolitain. Les messieurs en chapeau, les dames, les réverbères. Naples à Paris, déjà."
+      ],
+      "note": "Jean Béraud, Le boulevard des Capucines, le soir, devant le Café Napolitain, vers 1880.",
+      "art": {
+        "commons": "Béraud - Le boulevard des Capucines, le soir, devant le Café Napolitain, Vers 1880.jpg",
+        "caption": "Jean Béraud, Devant le Café Napolitain, vers 1880",
+        "image": "forza-napoli-1600.webp",
+        "mid": "forza-napoli-900.webp",
+        "width": 1920,
+        "height": 1493,
+        "color": "rgb(24, 24, 24)",
+        "credit": "Jean Béraud",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:B%C3%A9raud_-_Le_boulevard_des_Capucines,_le_soir,_devant_le_Caf%C3%A9_Napolitain,_Vers_1880.jpg"
+      },
+      "when": "Paris, un soir de 1880 · boulevard des Capucines",
+      "scene": [
+        "Les becs de gaz s'allument un par un, l'allumeur passe avec sa perche. Devant le Café Napolitain, les tables débordent sur le trottoir.",
+        "Je commande une glace parce que tout le monde en commande. Elle arrive dans une coupe d'argent et fond déjà. À la table voisine, un journaliste parle fort de la Chambre, de l'Opéra, d'une actrice. Il dit qu'il écrira sa chronique ici, ce soir, comme hier.",
+        "Les fiacres passent au pas. Une femme rit sous un chapeau couvert de fleurs. Naples est à deux mille kilomètres. Elle est aussi là, dans la cuillère."
+      ]
+    },
+    "dessins-faits-main": {
+      "era": "1910",
+      "tone": "future",
+      "place": "Un étal de dessins",
+      "text": [
+        "Des dessins à l'encre accrochés au mur, faits main, 25 euros. Sur l'un, un homme braque une femme au café. En haut : Kill the past, embrace the future.",
+        "C'est une blague, peut-être. Ou un programme. Les vendeurs de dessins ne disent jamais lequel.",
+        "En 1910, Boccioni peignait La ville qui monte : des chevaux énormes, des chantiers, des hommes tirés par la force du neuf. Tuer le passé, ils l'avaient écrit aussi. Le passé est toujours là. Il vend des dessins."
+      ],
+      "note": "Umberto Boccioni, La città che sale, 1910. Le Manifeste du futurisme paraît à la une du Figaro en 1909.",
+      "art": {
+        "commons": "The City Rises by Umberto Boccioni 1910.jpg",
+        "caption": "Umberto Boccioni, La ville qui monte, 1910",
+        "image": "dessins-faits-main-1600.webp",
+        "mid": "dessins-faits-main-900.webp",
+        "width": 1920,
+        "height": 1275,
+        "color": "rgb(216, 200, 184)",
+        "credit": "Umberto Boccioni",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:The_City_Rises_by_Umberto_Boccioni_1910.jpg"
+      },
+      "when": "Paris, samedi 20 février 1909 · un kiosque",
+      "scene": [
+        "J'achète Le Figaro au kiosque, comme chaque samedi. En première page, un Italien que je ne connais pas écrit qu'il veut détruire les musées et les bibliothèques.",
+        "Je lis debout sur le trottoir. Il dit qu'une automobile rugissante est plus belle que la Victoire de Samothrace. Je lève la tête. Un omnibus à chevaux passe, lentement. Un taxi automobile le double en pétaradant.",
+        "Je plie le journal. Je ne sais pas si cet homme est fou. Je sais que le bruit du moteur, tout à coup, me plaît."
+      ]
+    },
+    "abribus-burger-king": {
+      "era": "1890",
+      "tone": "modern",
+      "place": "Un abribus",
+      "text": [
+        "Un abribus éclairé. Un dessert énorme et brillant, une glace dans un burger. Un ovni parmi les desserts, dit l'affiche. Derrière la vitre, une rue ordinaire.",
+        "On attend le bus devant la gourmandise. La lumière ne s'éteint jamais. L'affiche sourit à tout le monde, même à ceux qui ne la regardent pas.",
+        "Dans les années 1890, Jules Chéret couvrait Paris de femmes en couleurs qui vendaient des apéritifs et des bals. On a dit qu'il avait fait entrer l'art dans la rue. La rue, elle, a surtout appris à vendre."
+      ],
+      "note": "Jules Chéret (1836-1932), « père de l'affiche moderne ». La lithographie en couleurs change les murs de Paris en galerie publicitaire.",
+      "art": {
+        "commons": "Apéritif Mugnier affiche, Jules Chéret 90.jpg",
+        "caption": "Jules Chéret, affiche pour l'Apéritif Mugnier",
+        "image": "abribus-burger-king-1600.webp",
+        "mid": "abribus-burger-king-900.webp",
+        "width": 1920,
+        "height": 2531,
+        "color": "rgb(216, 184, 152)",
+        "credit": "Chéret, Jules (1836-1932). Illustrateur",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Ap%C3%A9ritif_Mugnier_affiche,_Jules_Ch%C3%A9ret_90.jpg"
+      },
+      "when": "Paris, 1891 · une palissade, avant le jour",
+      "scene": [
+        "Le colleur arrive avant l'aube avec son seau et sa brosse. Il déroule l'affiche sur la palissade et la lisse d'un geste large, comme on caresse un cheval.",
+        "Le jour se lève sur une femme en jaune et rouge qui danse au-dessus d'un apéritif. Elle a les bras levés, elle rit, elle est plus grande que moi. Les ouvriers qui vont au travail ralentissent. Un enfant la montre du doigt.",
+        "Hier, ce mur était gris. Aujourd'hui il vend. Je reste là, ma musette sur l'épaule, avec soif d'une chose dont je ne connaissais pas le nom hier."
+      ]
+    },
+    "deblock-metro": {
+      "era": "1914",
+      "tone": "future",
+      "place": "Un couloir du métro",
+      "text": [
+        "Une carte bancaire flotte sur un mur blanc carrelé. Own your money. Le compte courant pour vos euros, bitcoins et stablecoins. C'est le métro, quelque part sous Paris.",
+        "Les carreaux sont les mêmes depuis cent ans. L'argent, lui, est devenu invisible. On le promet maintenant comme on promettait autrefois l'électricité.",
+        "En 1914, Robert Delaunay peignait son hommage à Blériot : des disques de couleur, une hélice, un avion au-dessus de la Manche. Le futur tournait. Il tourne toujours, en plus petit, dans nos poches."
+      ],
+      "note": "Robert Delaunay, Hommage à Blériot, 1914. Louis Blériot avait traversé la Manche en avion en 1909.",
+      "art": {
+        "commons": "Robert Delaunay, Hommage à Blériot, 1914.jpg",
+        "caption": "Robert Delaunay, Hommage à Blériot, 1914",
+        "image": "deblock-metro-1600.webp",
+        "mid": "deblock-metro-900.webp",
+        "width": 1920,
+        "height": 1903,
+        "color": "rgb(56, 72, 120)",
+        "credit": "Robert Delaunay",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Robert_Delaunay,_Hommage_%C3%A0_Bl%C3%A9riot,_1914.jpg"
+      },
+      "when": "Paris, 19 juillet 1900 · la ligne 1 ouvre",
+      "scene": [
+        "On descend sous la terre et tout le monde se tait un peu. Les carreaux blancs renvoient la lumière électrique. Je n'ai jamais vu un couloir aussi propre.",
+        "La rame arrive en grinçant, toute en bois verni. Je monte en deuxième classe. Une dame serre son sac contre elle. Un garçon colle son front à la vitre noire pour voir filer le tunnel.",
+        "Porte Maillot, Vincennes : on traverse Paris sans voir le ciel. En remontant, le soleil me fait mal aux yeux. Le futur, je crois, sent l'huile chaude et l'orage."
+      ]
+    },
+    "feu-vert": {
+      "era": "1877",
+      "tone": "past",
+      "place": "Un carrefour haussmannien",
+      "text": [
+        "Le feu est vert. Une jeune femme traverse, une autre la suit, des scooters attendent. Les façades sont crème, les balcons noirs, le ciel blanc.",
+        "C'est l'heure où tout le monde va quelque part. Personne ne regarde les immeubles. Ils ont été construits pour ça : pour qu'on les oublie en marchant.",
+        "En 1877, Caillebotte peignait un carrefour neuf sous la pluie. Des parapluies, des pavés luisants, des gens qui se croisent sans se voir. Le feu n'existait pas encore. Le reste est pareil."
+      ],
+      "note": "Gustave Caillebotte, Rue de Paris, temps de pluie, 1877, Art Institute of Chicago. Le carrefour se trouve près de la gare Saint-Lazare.",
+      "art": {
+        "commons": "Gustave Caillebotte - Paris Street; Rainy Day - Google Art Project.jpg",
+        "caption": "Gustave Caillebotte, Rue de Paris, temps de pluie, 1877",
+        "image": "feu-vert-1600.webp",
+        "mid": "feu-vert-900.webp",
+        "width": 1920,
+        "height": 1454,
+        "color": "rgb(200, 200, 184)",
+        "credit": "Gustave Caillebotte",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_Paris_Street;_Rainy_Day_-_Google_Art_Project.jpg"
+      },
+      "when": "Paris, 1877 · place de Dublin, un jour de pluie",
+      "scene": [
+        "Il pleut fin, une pluie qui ne mouille pas, qui fait seulement briller. Les pavés sont neufs, taillés au carré. Ils sentent encore la pierre fraîche.",
+        "Je tiens mon parapluie un peu bas. Un monsieur en haut-de-forme me croise sans me voir, une dame à son bras, la voilette baissée. Les immeubles ont tous la même hauteur, la même couleur de beurre. On dirait qu'on a rangé la ville.",
+        "Au loin, une voiture à cheval tourne. J'entends les fers glisser. Personne ne court. À Paris, en 1877, on ne court pas sous la pluie."
+      ]
+    },
+    "parc-de-l-etrange": {
+      "era": "1861",
+      "tone": "past",
+      "place": "Une grille, un soir d'octobre",
+      "text": [
+        "Une bâche noire sur une grille : Le Parc de l'Étrange, l'événement immersif d'Halloween. Les lettres rouges dégoulinent exprès. Derrière, des arbres tranquilles.",
+        "On paie maintenant pour avoir peur. On fait la queue. On crie un peu, on rit beaucoup, on ressort dans la nuit ordinaire.",
+        "En 1861, Nadar est descendu dans les catacombes avec de la lumière artificielle et des mannequins. Il a photographié les crânes alignés, les os rangés comme du bois. Sous Paris, Halloween dure toute l'année."
+      ],
+      "note": "Félix Nadar photographie les catacombes de Paris en 1861-1862, l'une des premières séries de photographies à la lumière artificielle.",
+      "art": {
+        "commons": "Nadar - Catacombes de Paris - NPS 74.jpg",
+        "caption": "Nadar, Catacombes de Paris, 1861-1862",
+        "image": "parc-de-l-etrange-1600.webp",
+        "mid": "parc-de-l-etrange-900.webp",
+        "width": 1920,
+        "height": 2591,
+        "color": "rgb(248, 248, 248)",
+        "credit": "Nadar",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Nadar_-_Catacombes_de_Paris_-_NPS_74.jpg"
+      },
+      "when": "Sous Paris · hiver 1861, les catacombes",
+      "scene": [
+        "On descend un escalier qui tourne longtemps. L'air devient froid et humide ; il sent la craie et quelque chose de plus vieux.",
+        "Monsieur Nadar fait installer ses lampes. La lumière est si blanche qu'elle fait mal. Les crânes surgissent d'un coup, rangés en murs, par milliers. Il faut poser de longues minutes ; on met un mannequin à la place des ouvriers, parce que personne ne tient immobile si longtemps.",
+        "Je tiens le câble. Je ne regarde pas les orbites. Là-haut, sur le boulevard, les gens passent sans savoir qu'ils marchent sur leurs arrière-grands-parents."
+      ]
+    },
+    "gospel-dream": {
+      "era": "1926",
+      "tone": "past",
+      "text": [
+        "Une affiche sur un échafaudage : Gospel Dream, chants authentiques de l'Église afro-américaine. Des choristes en robes violettes. Église Saint-Louis-d'Antin, vendredi, 20 h 30.",
+        "On imagine les voix dans la pierre froide. Les gens du quartier qui entrent par curiosité et qui ressortent autrement.",
+        "En 1925, Joséphine Baker arrivait de Saint-Louis, Missouri, et Paris perdait la tête. Le jazz, le charleston, la Revue nègre. Paris a souvent écouté l'Amérique noire avant l'Amérique."
+      ],
+      "note": "Joséphine Baker photographiée par Waléry vers 1926. Arrivée à Paris en 1925 avec la Revue nègre, elle devient française en 1937.",
+      "art": {
+        "commons": "Joséphine Baker - photo Waléry.jpg",
+        "caption": "Waléry, Joséphine Baker, vers 1926",
+        "image": "gospel-dream-1600.webp",
+        "mid": "gospel-dream-900.webp",
+        "width": 1920,
+        "height": 2863,
+        "color": "rgb(72, 72, 56)",
+        "credit": "Lucien Waléry",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9phine_Baker_-_photo_Wal%C3%A9ry.jpg"
+      },
+      "when": "Paris, 2 octobre 1925 · théâtre des Champs-Élysées",
+      "scene": [
+        "Je suis au balcon et il fait trop chaud. Les dames s'éventent avec le programme. Puis l'orchestre attaque et la salle se tait d'un coup, comme si on avait coupé le gaz.",
+        "Elle entre presque nue, une ceinture de plumes, les genoux qui partent dans tous les sens. Elle louche, elle rit, elle se moque de nous. À côté de moi, un monsieur en smoking dit que c'est une honte. Il ne détourne pas les yeux.",
+        "En sortant, avenue Montaigne, j'entends encore le trombone. Je marche plus vite. Je ne sais pas pourquoi."
+      ]
+    },
+    "rue-du-palais": {
+      "era": "1788",
+      "tone": "past",
+      "place": "Hors les murs — sans doute Grenoble",
+      "text": [
+        "Une plaque : Rue du Palais. En dessous, à la bombe, Macron castration. Un vélo, un pied de mur, de la pierre claire.",
+        "Ce n'est peut-être pas Paris. Le blason ressemble à celui de Grenoble. Mais la colère, elle, n'a pas d'adresse.",
+        "En juin 1788, à Grenoble, le peuple est monté sur les toits et a jeté des tuiles sur les soldats du roi. On l'a appelée la Journée des Tuiles. Un an plus tard, il y avait la Bastille."
+      ],
+      "note": "Alexandre Debelle, La Journée des Tuiles (7 juin 1788), 1889, musée de la Révolution française, Vizille.",
+      "art": {
+        "commons": "Journée des Tuiles (Alexandre Debelle), Musée de la Révolution française - Vizille.jpg",
+        "caption": "Alexandre Debelle, La Journée des Tuiles, 1889",
+        "image": "rue-du-palais-1600.webp",
+        "mid": "rue-du-palais-900.webp",
+        "width": 1094,
+        "height": 836,
+        "color": "rgb(104, 88, 56)",
+        "credit": "Alexandre Debelle",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Journ%C3%A9e_des_Tuiles_(Alexandre_Debelle),_Mus%C3%A9e_de_la_R%C3%A9volution_fran%C3%A7aise_-_Vizille.jpg"
+      },
+      "when": "Grenoble, 7 juin 1788 · la Journée des Tuiles",
+      "scene": [
+        "Les cloches sonnent depuis le matin. Le roi veut chasser nos parlementaires et la ville ne veut pas. Les boutiques ferment l'une après l'autre.",
+        "Je monte sur le toit avec ma voisine. On arrache les tuiles à mains nues. En bas, les soldats avancent, baïonnette au canon. Quand ils lèvent la tête, les tuiles leur tombent dessus comme une grêle rouge.",
+        "Le soir, les parlementaires restent. La ville a gagné une journée. Personne ne sait encore que c'est le début de tout."
+      ]
+    },
+    "une-solution-revolution": {
+      "era": "1789",
+      "tone": "past",
+      "place": "Hors les murs — une façade rose",
+      "text": [
+        "Une façade rose, des volets fermés, une voiture garée. Sur le mur, des lettres sales : Une solution, révolution.",
+        "Le mot est écrit petit, presque timide. Les murs de province parlent plus bas que ceux de Paris.",
+        "Le 14 juillet 1789, on a pris la Bastille avec des fusils trouvés le matin même aux Invalides. On n'a libéré que sept prisonniers. Mais le mot est resté, et on l'écrit encore sur les murs roses."
+      ],
+      "note": "Jean-Pierre Houël, Prise de la Bastille, 1789, Bibliothèque nationale de France.",
+      "art": {
+        "commons": "Prise de la Bastille clean.jpg",
+        "caption": "Jean-Pierre Houël, Prise de la Bastille, 1789",
+        "image": "une-solution-revolution-1600.webp",
+        "mid": "une-solution-revolution-900.webp",
+        "width": 1920,
+        "height": 1459,
+        "color": "rgb(152, 136, 120)",
+        "credit": "Jean-Pierre Houël",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille_clean.jpg"
+      },
+      "when": "Paris, 14 juillet 1789 · devant la Bastille",
+      "scene": [
+        "Le matin, aux Invalides, on a pris des fusils. Maintenant il faut de la poudre, et la poudre est là-dedans, derrière les murs de la Bastille.",
+        "La foule est si serrée que je ne sens plus mes pieds. On tire depuis les tours. Un homme tombe à côté de moi, se relève, la manche rouge. Les gardes-françaises arrivent avec des canons et la place entière hurle.",
+        "En fin d'après-midi, le pont-levis s'abaisse. On entre. Il n'y a que sept prisonniers. On les porte en triomphe quand même."
+      ]
+    },
+    "nike-la-police": {
+      "era": "1896",
+      "tone": "past",
+      "place": "Hors les murs — un mur rose",
+      "text": [
+        "Un mur rose, une fenêtre aux volets blancs et, à la bombe noire : Nike la police. Une voiture grise s'est arrêtée juste dessous, comme si elle n'avait rien vu.",
+        "Le mot est mal écrit et tout le monde le comprend. Les murs ne corrigent pas les fautes.",
+        "En 1896, Steinlen dessinait La Rue pour une affiche : des ouvrières, des enfants, des bourgeois, des sergents de ville, tout le monde sur le même trottoir. Il aimait les gens d'en bas. Le trottoir est resté le même."
+      ],
+      "note": "Théophile Alexandre Steinlen, La Rue, affiche pour l'imprimeur Charles Verneau, 1896.",
+      "art": {
+        "commons": "Affiches Charles Verneau. \"La Rue \" - affiche - Steinlen 96 - btv1b9011731v.jpg",
+        "caption": "Théophile Alexandre Steinlen, La Rue, 1896",
+        "image": "nike-la-police-1600.webp",
+        "mid": "nike-la-police-900.webp",
+        "width": 1920,
+        "height": 1516,
+        "color": "rgb(40, 40, 40)",
+        "credit": "Steinlen, Théophile Alexandre (1859-1923). Illustrateur",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Affiches_Charles_Verneau._%22La_Rue_%22_-_affiche_-_Steinlen_96_-_btv1b9011731v.jpg"
+      },
+      "when": "Montmartre, 1896 · rue Caulaincourt",
+      "scene": [
+        "Le matin, la rue appartient à ceux qui travaillent. Les blanchisseuses portent leur panier sur la hanche, les apprentis sifflent, un chiffonnier fouille les poubelles.",
+        "Un sergent de ville fait les cent pas, la pèlerine sur l'épaule. Il regarde les enfants comme s'ils allaient voler quelque chose. Ils vont peut-être voler quelque chose.",
+        "Un homme barbu dessine tout ça dans un carnet, assis sur une borne. Il s'appelle Steinlen. Il me demande de ne pas bouger. Je ne bouge pas. Je suis dans La Rue, maintenant."
+      ]
+    }
+  }
+}

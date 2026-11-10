@@ -1,4 +1,3 @@
-import history from './data/history.json';
 import walk from './data/walk.json';
 import raw from './data/photos.json';
 import type { PendingPhoto, Photo } from './types';
@@ -58,16 +57,8 @@ export function formatCoords(lat: number, lng: number, digits = 4) {
 
 export const pad2 = (n: number) => String(n).padStart(2, '0');
 
-type Leg = { distance: number; duration: number; coordinates: [number, number][] };
+type Leg = { distance: number; duration: number; coordinates: [number, number][]; streets?: [number, string][] };
 const LEGS = walk as unknown as Record<string, Leg>;
 export const legBetween = (a?: string, b?: string): Leg | null => (a && b ? LEGS[`${a}>${b}`] ?? null : null);
 export const formatWalk = (l: Leg) => `${(l.distance / 1000).toFixed(1).replace('.', ',')} km · ${Math.round(l.duration / 60)} min à pied`;
 export const walkKm = photos.slice(1).reduce((km, p, i) => km + (legBetween(photos[i].id, p.id)?.distance ?? 0) / 1000, 0);
-
-export type History = {
-  caption: string; year: string; lede: string; timeline: [string, string][];
-  image: string; mid: string; width: number; height: number; credit: string; license: string; source: string;
-};
-const HISTORY = history as unknown as Record<string, History>;
-export const historyOf = (id: string): History | null => HISTORY[id] ?? null;
-export const historyUrl = (file: string) => `${import.meta.env.BASE_URL}history/${file}`;

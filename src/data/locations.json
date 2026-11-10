@@ -1,6 +1,6 @@
 {
   "louvre-galerie-apollon": {
-    "step": 4,
+    "step": 3,
     "title": "Musée du Louvre, Galerie d'Apollon",
     "place": "Musée du Louvre, rotonde d'Apollon",
     "lat": 48.86015,
@@ -9,7 +9,7 @@
     "clue": "Inscription « Le Musée du Louvre… Galerie d'Apollon »"
   },
   "big-black-cook": {
-    "step": 5,
+    "step": 2,
     "title": "Big Black Cook",
     "place": "5 rue Tiquetonne",
     "lat": 48.86433,
@@ -18,7 +18,7 @@
     "clue": "Enseigne du restaurant (adresse OpenStreetMap)"
   },
   "stendhal-rodin": {
-    "step": 3,
+    "step": 4,
     "title": "Médaillon de Stendhal par Rodin",
     "place": "Jardin du Luxembourg",
     "lat": 48.8478,
@@ -27,7 +27,7 @@
     "clue": "Plaque « Stendhal, Auguste Rodin » — œuvre du Jardin du Luxembourg"
   },
   "monument-aux-morts-15e": {
-    "step": 2,
+    "step": 5,
     "title": "Monument aux morts du XVe",
     "place": "Mairie du 15e, rue Péclet",
     "lat": 48.8411,
@@ -36,7 +36,7 @@
     "clue": "Inscription « Paris XVe » sur le monument"
   },
   "2cv-007": {
-    "step": 1,
+    "step": 6,
     "title": "La 2CV de James Bond",
     "place": "Parc André Citroën",
     "lat": 48.8412,
@@ -45,7 +45,7 @@
     "clue": "Exposition de 2CV Citroën, pelouses et haies du parc"
   },
   "gospel-dream": {
-    "step": 6,
+    "step": 1,
     "title": "Gospel Dream",
     "place": "Près de Saint-Louis-d'Antin, rue du Havre",
     "lat": 48.87451,
