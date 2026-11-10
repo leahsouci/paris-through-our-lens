@@ -1,4 +1,4 @@
-// Tiny WebAudio soundscape: a low city murmur and footsteps driven by the scroll. Off until the visitor opts in.
+// Tiny WebAudio soundscape: a low city murmur. Off until the visitor opts in.
 let ctx: AudioContext | null = null;
 let master: GainNode;
 let murmurFilter: BiquadFilterNode;
@@ -41,21 +41,4 @@ export function setMood(tone: 'past' | 'modern' | 'future' | 'street') {
   if (!ctx) return;
   const f = { past: 260, modern: 520, future: 1100, street: 420 }[tone];
   murmurFilter.frequency.setTargetAtTime(f, ctx.currentTime, 0.8);
-}
-
-export function footstep() {
-  if (!ctx || ctx.state !== 'running') return;
-  const t = ctx.currentTime;
-  const src = ctx.createBufferSource();
-  src.buffer = noise(0.12);
-  const bp = ctx.createBiquadFilter();
-  bp.type = 'bandpass';
-  bp.frequency.value = 700 + Math.random() * 500;
-  bp.Q.value = 1.4;
-  const g = ctx.createGain();
-  g.gain.setValueAtTime(0.0001, t);
-  g.gain.exponentialRampToValueAtTime(0.5, t + 0.008);
-  g.gain.exponentialRampToValueAtTime(0.0001, t + 0.11);
-  src.connect(bp).connect(g).connect(master);
-  src.start(t);
 }

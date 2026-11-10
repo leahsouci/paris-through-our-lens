@@ -7,7 +7,7 @@ import type { InkMap, Waypoint } from './map/InkMap';
 import { cumulative, pointAt, type LngLat } from './map/geo';
 import { photos, pending, photoUrl, formatCoords, legBetween, arrondissementLabel } from './photos';
 import type { PendingPhoto } from './types';
-import { footstep, setMood, setSound } from './ambience';
+import { setMood, setSound } from './ambience';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -127,7 +127,6 @@ export default function App() {
       placeTicks();
       ScrollTrigger.create({ start: 0, end: 'max', onUpdate: (t) => bar.style.setProperty('--p', t.progress.toFixed(4)) });
       ScrollTrigger.create({ trigger: '.hero', start: 'top top', end: 'bottom 60%', onEnterBack: () => { setHud(-1); ink.current?.overview(); hud.km.textContent = ''; } });
-      let lastPace = -1;
       gsap.utils.toArray<HTMLElement>('.approach').forEach((el) => {
         const k = Number(el.dataset.k);
         const st = stops[k];
@@ -146,8 +145,6 @@ export default function App() {
             const p = t.progress;
             const d = from + (st.d - from) * (p * p * (3 - 2 * p));
             const q = ink.current?.walk(d, p, { img: photoUrl(st.photo.thumb), at: st.at }) ?? '';
-            const pace = Math.floor(d / 38);
-            if (pace !== lastPace) { lastPace = pace; if (p > 0.02 && p < 0.98) footstep(); }
             const f = st.leg ? (d - st.s) / Math.max(1, st.e - st.s) : 0;
             const name = [...(st.leg?.streets ?? [])].reverse().find(([at]) => at <= f + 0.01)?.[1] ?? '';
             if (street.textContent !== name) street.textContent = name;
