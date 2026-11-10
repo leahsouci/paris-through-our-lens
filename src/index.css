@@ -119,3 +119,56 @@ button { font: inherit; }
 .postcard img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
 .topbar { pointer-events: none; }
 .sound { pointer-events: auto; background: none; border: 0; color: inherit; font-style: italic; cursor: pointer; padding: 0; }
+
+/* Ask-Gib-style journey: a sticky arched map on the left, the walk scrolling on the right */
+.journey { display: grid; grid-template-columns: minmax(0, 42vw) minmax(0, 1fr); }
+.arch-wrap { position: sticky; top: 0; height: 100vh; padding: 62px 0 22px 22px; z-index: 2; }
+.arch { position: relative; height: 100%; overflow: hidden; isolation: isolate; background: var(--paper); border: 1.5px solid var(--ink); border-radius: 50% 50% 12px 12px / 24% 24% 12px 12px; box-shadow: 0 24px 60px rgba(42,36,32,0.18); }
+.arch::after { content: ''; position: absolute; inset: 7px; z-index: 3; pointer-events: none; border: 1px solid rgba(42,36,32,0.45); border-radius: 50% 50% 8px 8px / 24% 24% 8px 8px; }
+.promenade .map-layer { position: absolute; inset: 0; z-index: 0; opacity: 0; transition: opacity 1.4s ease; }
+.promenade.map-ready .map-layer { opacity: 1; }
+.hud { position: absolute; left: 20px; right: 20px; bottom: 20px; z-index: 4; display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: center; padding: 14px 18px; background: var(--paper-2); border: 1px solid var(--ink); box-shadow: 0 10px 30px rgba(42,36,32,0.2); }
+.hud-n { grid-row: span 2; display: grid; place-items: center; width: 52px; height: 52px; border: 1px solid var(--ox); border-radius: 50%; color: var(--ox); font-style: italic; font-size: 18px; }
+.hud-era { display: block; font-weight: 400; font-size: clamp(24px, 2.4vw, 34px); line-height: 1; color: var(--ox); }
+.hud-place { display: block; margin-top: 4px; font-size: 14px; color: var(--sepia); }
+.hud-dots { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.hud-dots i { width: 7px; height: 7px; transform: rotate(45deg); border: 1px solid var(--ink); background: transparent; transition: background 0.4s; }
+.hud-dots i.loc { border-color: var(--ox); }
+.hud-dots i.on { background: var(--ink); }
+.hud-dots i.now { background: var(--ox); border-color: var(--ox); transform: rotate(45deg) scale(1.4); }
+.hud-km { grid-column: 1 / -1; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sepia); }
+.hud-km:empty { display: none; }
+.story { min-width: 0; position: relative; z-index: 1; }
+.story .hero { height: auto; }
+.story .hero-inner { position: relative; min-height: 100vh; height: auto; background: none; padding: 90px var(--gutter) 60px; }
+.story .hero h1 { font-size: clamp(64px, 9vw, 170px); }
+.story .hero-lede { max-width: 540px; }
+.approach { min-height: 160vh; padding: 0 var(--gutter); }
+.approach-card { position: sticky; top: 26vh; max-width: 540px; padding: 26px 30px; background: var(--paper-2); border-top: 3px solid var(--ox); box-shadow: 0 20px 60px rgba(42,36,32,0.18); }
+.approach-card .kicker { color: var(--ox); }
+.approach-card h3 { margin: 10px 0 6px; font-weight: 400; font-size: clamp(24px, 2.2vw, 32px); line-height: 1.15; }
+.walk-q { margin: -8px 0 12px; font-size: 14px; color: var(--sepia); font-style: italic; min-height: 1.2em; }
+.story .ch-era { font-size: clamp(90px, 13vw, 230px); }
+.story .ch-body { grid-template-columns: 1fr; max-width: 640px; }
+.story .ch-scene p:not(.kicker) { font-size: clamp(22px, 2vw, 32px); }
+.story .ch { overflow: clip; }
+.coda, .outro { background: var(--paper); }
+
+@media (max-width: 800px) {
+  .journey { display: block; }
+  .arch-wrap { height: 44vh; padding: 46px 10px 8px; background: var(--paper); z-index: 5; }
+  .arch { border-radius: 50% 50% 10px 10px / 30% 30% 10px 10px; }
+  .arch::after { border-radius: 50% 50% 6px 6px / 30% 30% 6px 6px; }
+  .hud { left: 10px; right: 10px; bottom: 10px; padding: 8px 12px; gap: 2px 10px; }
+  .hud-n { width: 36px; height: 36px; font-size: 14px; }
+  .hud-era { font-size: 20px; }
+  .hud-place { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hud-dots { display: none; }
+  .story .ch-bg { top: 44vh; height: 56vh; }
+  .story .ch-inner { margin-top: -56vh; }
+  .story .ch-head { min-height: 56vh; }
+  .story .hero-inner { min-height: 56vh; padding-top: 40px; }
+  .approach { min-height: 130vh; }
+  .approach-card { top: 47vh; padding: 18px 20px; }
+  .approach-card .walk-text { font-size: 16px; }
+}

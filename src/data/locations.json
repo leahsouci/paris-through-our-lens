@@ -1,6 +1,6 @@
 {
   "louvre-galerie-apollon": {
-    "step": 3,
+    "step": 1,
     "title": "Musée du Louvre, Galerie d'Apollon",
     "place": "Musée du Louvre, rotonde d'Apollon",
     "lat": 48.86015,
@@ -18,7 +18,7 @@
     "clue": "Enseigne du restaurant (adresse OpenStreetMap)"
   },
   "stendhal-rodin": {
-    "step": 4,
+    "step": 3,
     "title": "Médaillon de Stendhal par Rodin",
     "place": "Jardin du Luxembourg",
     "lat": 48.8478,
@@ -45,7 +45,7 @@
     "clue": "Exposition de 2CV Citroën, pelouses et haies du parc"
   },
   "gospel-dream": {
-    "step": 1,
+    "step": 4,
     "title": "Gospel Dream",
     "place": "Près de Saint-Louis-d'Antin, rue du Havre",
     "lat": 48.87451,

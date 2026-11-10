@@ -5,6 +5,8 @@ import path from 'node:path';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const photos = JSON.parse(await fs.readFile(path.join(ROOT, 'src/data/photos.json'), 'utf8')).filter((p) => p.lat != null);
+// The snail starts at Point zéro, on the parvis of Notre-Dame, and unwinds outward.
+photos.unshift({ id: 'point-zero', lat: 48.8534, lng: 2.3488 });
 const legs = {};
 for (let i = 0; i < photos.length - 1; i++) {
   const [a, b] = [photos[i], photos[i + 1]];
