@@ -1,0 +1,107 @@
+{
+  "louvre-galerie-apollon": {
+    "step": 4,
+    "title": "Musée du Louvre, Galerie d'Apollon",
+    "place": "Musée du Louvre, rotonde d'Apollon",
+    "lat": 48.86015,
+    "lng": 2.33768,
+    "precision": "exact",
+    "clue": "Inscription « Le Musée du Louvre… Galerie d'Apollon »"
+  },
+  "big-black-cook": {
+    "step": 5,
+    "title": "Big Black Cook",
+    "place": "5 rue Tiquetonne",
+    "lat": 48.86433,
+    "lng": 2.34976,
+    "precision": "exact",
+    "clue": "Enseigne du restaurant (adresse OpenStreetMap)"
+  },
+  "stendhal-rodin": {
+    "step": 3,
+    "title": "Médaillon de Stendhal par Rodin",
+    "place": "Jardin du Luxembourg",
+    "lat": 48.8478,
+    "lng": 2.3329,
+    "precision": "approx",
+    "clue": "Plaque « Stendhal, Auguste Rodin » — œuvre du Jardin du Luxembourg"
+  },
+  "monument-aux-morts-15e": {
+    "step": 2,
+    "title": "Monument aux morts du XVe",
+    "place": "Mairie du 15e, rue Péclet",
+    "lat": 48.8411,
+    "lng": 2.3001,
+    "precision": "approx",
+    "clue": "Inscription « Paris XVe » sur le monument"
+  },
+  "2cv-007": {
+    "step": 1,
+    "title": "La 2CV de James Bond",
+    "place": "Parc André Citroën",
+    "lat": 48.8412,
+    "lng": 2.2745,
+    "precision": "approx",
+    "clue": "Exposition de 2CV Citroën, pelouses et haies du parc"
+  },
+  "gospel-dream": {
+    "step": 6,
+    "title": "Gospel Dream",
+    "place": "Près de Saint-Louis-d'Antin, rue du Havre",
+    "lat": 48.87451,
+    "lng": 2.32803,
+    "precision": "approx",
+    "clue": "Affiche du concert à l'Église Saint-Louis-d'Antin, 4 rue du Havre"
+  },
+  "affiches-pcr": {
+    "title": "Tu es communiste ?"
+  },
+  "le-parisien": {
+    "title": "Le Parisien, mercredi 17 juin"
+  },
+  "le-diable-noir": {
+    "title": "Le Diable noir, en vitrine"
+  },
+  "autocollant-revolution": {
+    "title": "Rejoins-nous !"
+  },
+  "dessins-faits-main": {
+    "title": "Handmade drawings, 25 €"
+  },
+  "abribus-burger-king": {
+    "title": "Un ovni parmi les desserts"
+  },
+  "une-solution-revolution": {
+    "title": "Une solution : révolution",
+    "clue": "Même façade rose que « Nike la police » — peut-être hors Paris"
+  },
+  "systeme-violent": {
+    "title": "C'est votre système qui est violent"
+  },
+  "rue-du-palais": {
+    "title": "Rue du Palais",
+    "clue": "Le blason de la plaque ressemble à celui de Grenoble — à vérifier"
+  },
+  "vive-la-commune": {
+    "title": "Vive la Commune"
+  },
+  "deblock-metro": {
+    "title": "Own your money, dans le métro"
+  },
+  "forza-napoli": {
+    "title": "Forza Napoli"
+  },
+  "graffitis-zero": {
+    "title": "Zéro"
+  },
+  "parc-de-l-etrange": {
+    "title": "Le Parc de l'Étrange"
+  },
+  "feu-vert": {
+    "title": "Feu vert"
+  },
+  "nike-la-police": {
+    "title": "Façade rose",
+    "clue": "Architecture qui ne ressemble pas à Paris — à vérifier"
+  }
+}
