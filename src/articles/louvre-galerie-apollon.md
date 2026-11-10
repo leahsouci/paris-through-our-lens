@@ -1,5 +1,5 @@
 ---
-title: Musée du Louvre, Galerie d'Apollon
+title: The Louvre, Galerie d'Apollon
 author: 
 ---
 

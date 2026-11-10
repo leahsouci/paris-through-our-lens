@@ -1,5 +1,5 @@
 ---
-title: Own your money, dans le métro
+title: Own your money, in the métro
 author: 
 ---
 

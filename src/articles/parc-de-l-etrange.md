@@ -1,5 +1,5 @@
 ---
-title: Le Parc de l'Étrange
+title: The Park of the Strange
 author: 
 ---
 

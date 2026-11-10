@@ -1,5 +1,5 @@
 ---
-title: Médaillon de Stendhal par Rodin
+title: Stendhal medallion by Rodin
 author: 
 ---
 

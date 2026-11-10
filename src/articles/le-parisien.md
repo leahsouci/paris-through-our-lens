@@ -1,5 +1,5 @@
 ---
-title: Le Parisien, mercredi 17 juin
+title: Le Parisien, Wednesday 17 June
 author: 
 ---
 

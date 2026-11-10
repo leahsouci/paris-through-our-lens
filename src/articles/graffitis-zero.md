@@ -1,5 +1,5 @@
 ---
-title: Zéro
+title: Zero
 author: 
 ---
 

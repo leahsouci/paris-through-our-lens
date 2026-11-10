@@ -32,14 +32,16 @@ export const pending: PendingPhoto[] = all.filter((p) => p.lat == null || p.lng 
 const NAMES = ['', 'Louvre', 'Bourse', 'Temple', 'Hôtel-de-Ville', 'Panthéon', 'Luxembourg', 'Palais-Bourbon', 'Élysée', 'Opéra', 'Entrepôt',
   'Popincourt', 'Reuilly', 'Gobelins', 'Observatoire', 'Vaugirard', 'Passy', 'Batignolles-Monceau', 'Buttes-Montmartre', 'Buttes-Chaumont', 'Ménilmontant'];
 
+const ord = (n: number) => `${n}${n % 10 === 1 && n !== 11 ? 'st' : n % 10 === 2 && n !== 12 ? 'nd' : n % 10 === 3 && n !== 13 ? 'rd' : 'th'}`;
+
 export function arrondissementLabel(n: number | null, withName = false) {
   if (n == null) return '';
   if (n === 0) return 'Outside Paris';
-  const label = `${n}${n === 1 ? 'er' : 'e'} arrondissement`;
+  const label = `${ord(n)} arrondissement`;
   return withName && NAMES[n] ? `${label} · ${NAMES[n]}` : label;
 }
 
-export const shortArr = (n: number | null) => (n == null ? '—' : n === 0 ? 'Outside Paris' : `${n}${n === 1 ? 'er' : 'e'}`);
+export const shortArr = (n: number | null) => (n == null ? '—' : n === 0 ? 'Outside Paris' : ord(n));
 
 export function formatDate(iso: string | null, withTime = true) {
   if (!iso) return 'Unknown date';

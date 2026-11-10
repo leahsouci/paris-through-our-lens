@@ -1,5 +1,5 @@
 ---
-title: Tu es communiste ?
+title: Are you a communist?
 author: 
 ---
 

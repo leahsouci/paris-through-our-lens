@@ -1,5 +1,5 @@
 ---
-title: C'est votre système qui est violent
+title: It's your system that is violent
 author: 
 ---
 

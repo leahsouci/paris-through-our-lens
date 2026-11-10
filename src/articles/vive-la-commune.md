@@ -1,5 +1,5 @@
 ---
-title: Vive la Commune
+title: Long live the Commune
 author: 
 ---
 

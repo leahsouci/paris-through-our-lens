@@ -1,5 +1,5 @@
 ---
-title: Le Diable noir, en vitrine
+title: The Black Devil, in a shop window
 author: 
 ---
 

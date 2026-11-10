@@ -1,5 +1,5 @@
 ---
-title: Monument aux morts du XVe
+title: War memorial of the 15th
 author: 
 ---
 

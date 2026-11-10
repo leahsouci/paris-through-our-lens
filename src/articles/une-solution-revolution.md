@@ -1,5 +1,5 @@
 ---
-title: Une solution : révolution
+title: One solution: revolution
 author: 
 ---
 

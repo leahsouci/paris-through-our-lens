@@ -1,5 +1,5 @@
 ---
-title: Rejoins-nous !
+title: Join us!
 author: 
 ---
 
