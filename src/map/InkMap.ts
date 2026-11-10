@@ -21,8 +21,9 @@ export class InkMap {
   private waypoints: Waypoint[];
   private bearing = 0;
   private walker: maplibregl.Marker;
-  private dest: maplibregl.Marker | null = null;
-  private destImg: HTMLImageElement | null = null;
+  private pin: maplibregl.Marker;
+  private card: HTMLDivElement | null = null;
+  private cardImg: HTMLImageElement | null = null;
   private q = { at: [0, 0] as LngLat, name: '' };
 
   private constructor(map: maplibregl.Map, route: LngLat[], waypoints: Waypoint[]) {
@@ -33,6 +34,9 @@ export class InkMap {
     const el = document.createElement('div');
     el.className = 'walker';
     this.walker = new maplibregl.Marker({ element: el });
+    const pin = document.createElement('div');
+    pin.className = 'dest-pin';
+    this.pin = new maplibregl.Marker({ element: pin });
   }
 
   static async create(container: HTMLElement, route: LngLat[], waypoints: Waypoint[]) {
@@ -103,7 +107,8 @@ export class InkMap {
 
   overview(walkedAll = false) {
     this.walker.remove();
-    this.dest?.getElement().classList.remove('is-on');
+    this.pin.remove();
+    this.card?.classList.remove('is-on');
     (this.map.getSource('walked') as maplibregl.GeoJSONSource).setData(walkedAll ? line(this.route) : { type: 'FeatureCollection', features: [] });
     const cam = this.map.cameraForBounds([[2.255, 48.8156], [2.44, 48.9022]], { padding: 24 });
     this.map.easeTo({ center: cam?.center, zoom: cam?.zoom ?? 11.5, pitch: 0, bearing: 0, duration: 1600 });
@@ -117,28 +122,33 @@ export class InkMap {
     const k = Math.cos((here[1] * Math.PI) / 180);
     if (dist(here, ahead) > 1) {
       const heading = (Math.atan2((ahead[0] - here[0]) * k, ahead[1] - here[1]) * 180) / Math.PI;
-      this.bearing += (((heading - this.bearing + 540) % 360) - 180) * 0.08;
+      this.bearing += (((heading - this.bearing + 540) % 360) - 180) * 0.035;
     }
     (this.map.getSource('walked') as maplibregl.GeoJSONSource).setData(line([...this.route.slice(0, i + 1), here]));
     this.walker.setLngLat(here).addTo(this.map);
     const dive = ease(p / 0.28), arrive = ease((p - 0.74) / 0.26);
+    // The destination photo is pinned to the frame, not to the street, so it stays still while the camera turns.
     if (dest) {
-      if (!this.dest) {
-        const el = document.createElement('div');
-        el.className = 'postcard';
-        this.destImg = document.createElement('img');
-        this.destImg.alt = '';
-        el.appendChild(this.destImg);
-        this.dest = new maplibregl.Marker({ element: el, anchor: 'bottom' });
+      if (!this.card) {
+        this.card = document.createElement('div');
+        this.card.className = 'postcard';
+        this.cardImg = document.createElement('img');
+        this.cardImg.alt = '';
+        this.card.appendChild(this.cardImg);
+        this.map.getContainer().appendChild(this.card);
       }
-      if (this.destImg && !this.destImg.src.endsWith(dest.img)) this.destImg.src = dest.img;
-      this.dest.setLngLat(dest.at).addTo(this.map);
-      this.dest.getElement().classList.toggle('is-on', arrive > 0.12);
-      this.dest.getElement().style.setProperty('--arrive', String(arrive));
+      if (this.cardImg && !this.cardImg.src.endsWith(dest.img)) this.cardImg.src = dest.img;
+      this.pin.setLngLat(dest.at).addTo(this.map);
+      this.card.classList.toggle('is-on', p > 0.55);
+      this.card.style.setProperty('--arrive', String(arrive));
     }
     this.map.jumpTo({ center: here, zoom: 13.4 + dive * 2.4 + arrive * 1.1, pitch: 15 + dive * 45 + arrive * 8, bearing: this.bearing * dive, padding: { left: 0, right: 0, top: 0, bottom: 0 } });
     if (dist(here, this.q.at) > 40) {
-      const f = quartiers.features.find((f) => (f.geometry.coordinates as LngLat[][]).some((r) => inRing(here, r)));
+      const f = quartiers.features.find((f) => {
+        const g = f.geometry as { type: string; coordinates: unknown };
+        const polys = (g.type === 'Polygon' ? [g.coordinates] : g.coordinates) as LngLat[][][];
+        return polys.some((poly) => inRing(here, poly[0]));
+      });
       this.q = { at: here, name: f?.properties.name ?? '' };
     }
     return this.q.name;

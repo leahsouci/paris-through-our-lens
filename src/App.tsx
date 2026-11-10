@@ -22,7 +22,7 @@ const byId = new Map<string, AnyPhoto>([...photos, ...pending].map((p) => [p.id,
 const artUrl = (f?: string) => (f ? `${import.meta.env.BASE_URL}art/${f}` : '');
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII'];
 const reduced = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const km = (m: number) => (m >= 1000 ? `${(m / 1000).toFixed(1).replace('.', ',')} km` : `${Math.max(0, Math.round(m / 10) * 10)} m`);
+const km = (m: number) => (m >= 1000 ? `${(m / 1000).toFixed(1)} km` : `${Math.max(0, Math.round(m / 10) * 10)} m`);
 
 // One continuous snail-shaped walk: Point zéro → every located photo, in arrondissement order.
 const route: LngLat[] = [];
@@ -93,6 +93,15 @@ export default function App() {
   useLayoutEffect(() => {
     const $ = (s: string) => root.current!.querySelector(s) as HTMLElement;
     const hud = { n: $('.hud-n'), era: $('.hud-era'), place: $('.hud-place'), km: $('.hud-km'), dots: [...root.current!.querySelectorAll('.hud-dots i')] };
+    const bar = $('.progress');
+    const ticks = [...bar.querySelectorAll('u')] as HTMLElement[];
+    const placeTicks = () => {
+      const max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+      root.current!.querySelectorAll<HTMLElement>('.ch').forEach((c, i) => {
+        if (ticks[i]) ticks[i].style.left = `${Math.min(100, (100 * (c.getBoundingClientRect().top + scrollY - innerHeight * 0.5)) / max)}%`;
+      });
+    };
+    ScrollTrigger.addEventListener('refresh', placeTicks);
     let hudK = -2;
     const setHud = (k: number) => {
       if (k === hudK) return;
@@ -102,6 +111,7 @@ export default function App() {
       hud.era.textContent = st ? st.ch.era : 'Point Zero';
       hud.place.textContent = st ? placeOf(st) : 'In front of Notre-Dame, where every road in France begins';
       hud.dots.forEach((d, i) => { d.classList.toggle('on', i < k); d.classList.toggle('now', i === k); });
+      ticks.forEach((t, i) => t.classList.toggle('on', i <= k));
       ink.current?.visit(k - 1);
     };
     setHud(-1);
@@ -114,7 +124,8 @@ export default function App() {
       gsap.ticker.lagSmoothing(0);
     }
     const ctx = gsap.context(() => {
-      gsap.to('.progress i', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: true } });
+      placeTicks();
+      ScrollTrigger.create({ start: 0, end: 'max', onUpdate: (t) => bar.style.setProperty('--p', t.progress.toFixed(4)) });
       ScrollTrigger.create({ trigger: '.hero', start: 'top top', end: 'bottom 60%', onEnterBack: () => { setHud(-1); ink.current?.overview(); hud.km.textContent = ''; } });
       let lastPace = -1;
       gsap.utils.toArray<HTMLElement>('.approach').forEach((el) => {
@@ -156,7 +167,7 @@ export default function App() {
       gsap.from('.hero-line', { yPercent: 110, opacity: 0, duration: 1.8, stagger: 0.12, ease: 'expo.out', delay: 0.2 });
       gsap.utils.toArray<HTMLElement>('.ch').forEach((ch) => {
         gsap.fromTo(ch.querySelector('.ch-bg img'), { scale: 1.22, yPercent: -4 }, { scale: 1.02, yPercent: 4, ease: 'none', scrollTrigger: { trigger: ch, start: 'top bottom', end: 'bottom top', scrub: true } });
-        gsap.fromTo(ch.querySelectorAll('.ch-scene .w'), { opacity: 0.08, filter: 'blur(3px)' }, { opacity: 1, filter: 'blur(0px)', stagger: 0.05, ease: 'none', scrollTrigger: { trigger: ch.querySelector('.ch-scene'), start: 'top 75%', end: 'bottom 75%', scrub: true } });
+        gsap.fromTo(ch.querySelectorAll('.ch-scene .w'), { opacity: 0.3, filter: 'blur(1.5px)' }, { opacity: 1, filter: 'blur(0px)', stagger: 0.05, ease: 'none', scrollTrigger: { trigger: ch.querySelector('.ch-scene'), start: 'top 75%', end: 'bottom 75%', scrub: true } });
         gsap.fromTo(ch.querySelector('.ch-veil'), { opacity: 0.35 }, { opacity: 1, ease: 'none', scrollTrigger: { trigger: ch, start: 'top top', end: '+=100%', scrub: true } });
         gsap.from(ch.querySelectorAll('.ch-head > *'), { y: 80, opacity: 0, duration: 1.6, stagger: 0.14, ease: 'expo.out', scrollTrigger: { trigger: ch, start: 'top 60%' } });
         gsap.fromTo(ch.querySelector('.ch-plate'), { clipPath: 'inset(100% 0% 0% 0%)', y: 120, rotate: 0 },
@@ -169,6 +180,7 @@ export default function App() {
     }, root);
     return () => {
       ctx.revert();
+      ScrollTrigger.removeEventListener('refresh', placeTicks);
       if (lenis) { gsap.ticker.remove(raf); lenis.destroy(); }
     };
   }, []);
@@ -176,9 +188,9 @@ export default function App() {
   return (
     <div ref={root} className="promenade">
       <div className="grain" aria-hidden />
-      <div className="progress" aria-hidden><i /></div>
       <header className="topbar">
-        <span>Paris, on foot</span>
+        <span className="brand">Paris, on foot</span>
+        <div className="progress" aria-hidden><i /><b />{stops.map((s) => <u key={s.k} />)}</div>
         <span>{stops.length} images · {km(total)} · <button className="sound" onClick={toggleSound} aria-pressed={sound}>{sound ? 'sound ●' : 'sound ○'}</button></span>
       </header>
 
