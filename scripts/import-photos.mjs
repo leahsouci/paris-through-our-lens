@@ -113,7 +113,7 @@ for (const file of files) {
   const articlePath = path.join(ARTICLES, `${id}.md`);
   if (!existsSync(articlePath)) {
     const title = loc.title ?? path.parse(file).name.replace(/[-_]+/g, ' ');
-    await fs.writeFile(articlePath, `---\ntitle: ${title}\nauthor: \n---\n\nÉcris ici l'histoire de cette photo : où, quand, pourquoi elle compte.\n`);
+    await fs.writeFile(articlePath, `---\ntitle: ${title}\nauthor: \n---\n\nWrite the story of this photo here: where, when, why it matters.\n`);
   }
   console.log(`✓ ${file}${lat == null ? '  (no GPS)' : `  ${lat.toFixed(5)}, ${lng.toFixed(5)}`}`);
 }
